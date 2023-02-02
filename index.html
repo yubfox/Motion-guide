@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Machine Motion</title>
+
+    </head>
+    <body>
+        <script src="./lib/three.min.js"></script> 
+        <!-- 이렇게 루트로 갔다가 내려오는 방식은 안정감이 있어보이지만 웹에서 상대좌표를 못찾음  -->
+        <script src="./lib/fflate.min.js"></script> 
+        <script src="./lib/FBXLoader.js"></script>
+        <script src="./lib/OrbitControls.js"></script>
+        <script src="./lib/GamePad.js"></script>
+        <script src="MC_ani.js"></script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function(){
+                const game = new MC_ani();
+                window.game = game;
+            });
+        </script>
+        <!-- <select id="changeAction" -->
+        <!-- onchange="javascript:game.changeAction()"> -->
+            <!-- <option seleted value="2">Idle</option> -->
+            <!-- <option value="4">Walk</option> -->
+            <!-- <option value="0">Kick</option> -->
+            <!-- 뭘 근거로 번호가 정해지는지는 아직 모름. -->
+        <!-- </select> --> 
+    </body>
+</html>
